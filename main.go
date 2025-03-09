@@ -20,6 +20,7 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	file := notes.ReadTodosFile()
+	defer file.Close()
 
 	if *clear {
 		HandleClearFlag(file)
@@ -47,5 +48,4 @@ func main() {
 	fmt.Println("Usage: ")
 	flag.PrintDefaults()
 
-	defer file.Close()
 }
