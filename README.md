@@ -13,6 +13,7 @@ You can add a todo, change todo status, list them and clear the list.
 - handle sys files
 - handle data
 - creating CLI tool with flags
+- handle no flags runtime
 
 (c) nadavushka_dev
 
